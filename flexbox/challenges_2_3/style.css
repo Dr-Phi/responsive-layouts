@@ -137,6 +137,11 @@ header {
   gap: 1.5rem;
 }
 
-.push-right {
+/* .push-right {
   margin-left: auto;
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
