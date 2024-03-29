@@ -50,22 +50,100 @@ h6 {
   font-size: 18px;
 }
 
-.roboto-regular {
+p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 21px;
 }
 
-.playfair-display-36 > {
+h3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 36px;
   font-style: normal;
+  margin-bottom: 1rem;
 }
 
 :root {
   --cream: #f3eed9;
   --brown: #824936;
   --darkGreen: #222c2a;
+}
+
+.container {
+  max-width: 70.5rem;
+  margin: 0 auto;
+}
+
+.text-brown {
+  color: var(--brown);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.bg-dark {
+  background-color: var(--darkGreen);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+header {
+  min-height: 660px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: var(--cream);
+}
+
+header .container {
+  max-height: 30vh;
+  max-width: 60vw;
+}
+
+header p {
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 4rem;
+  /*  */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for the first two flex items */
+.row > :nth-child(-n + 2) {
+  flex: 1 1 auto; /* shorthand for flex-grow, flex-shrink, flex-basis */
+  max-width: 47%;
+}
+
+main h3 {
+  text-align: center;
+}
+
+main > .container {
+  margin: 5rem auto;
+}
+
+article .row {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+article p {
+  color: white;
 }
