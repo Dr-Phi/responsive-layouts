@@ -145,3 +145,24 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .hero__img,
+  .hero__text,
+  .primary-content,
+  .sidebar {
+    width: 100%;
+  }
+  .hero__img {
+    margin-top: 2em;
+  }
+  .section-title:first-of-type {
+    font-size: 1.6rem;
+  }
+}
