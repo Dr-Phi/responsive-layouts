@@ -3,7 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Sample website</title>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-darkest">
+      <div class="container">
+        <div id="mobile_header">
+          <a class="logo" href="#">
+            <img src="img/logo.svg" alt="conquering responsive layouts" />
+          </a>
+          <label class="hamburger-menu">
+            <input type="checkbox" onclick="toggleNavbar()" />
+          </label>
+        </div>
+      </div>
+      <div class="navbar hidden" id="navbar">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <div class="sign_nav">
+              <li>Sign in</li>
+              <li class="btn">Sign up</li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="landing">
+      <div class="container">
+        <h1>
+          Responsive layouts
+          <span class="color_sub">don't have to be a struggle</span>
+        </h1>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="btn">I WANT TO LEARN</div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("hidden");
+      }
+    </script>
+  </body>
 </html>
