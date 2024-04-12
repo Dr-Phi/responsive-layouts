@@ -49,6 +49,7 @@ h6 {
 
 :root {
   --darkest: #2e323f;
+  --dark: #3b4050;
   --bar-width: 33px;
   --bar-height: 5px;
   --hamburger-gap: 4px;
@@ -58,7 +59,7 @@ h6 {
 }
 
 .container {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 #mobile_header {
@@ -208,17 +209,109 @@ h1 {
 }
 
 p + .btn {
+  margin: 10px;
   margin-left: auto;
   min-width: 10rem;
   text-align: center;
 }
 
 .landing {
-  background-color: #3b4050;
+  background-color: var(--dark);
   padding-bottom: 1rem;
 }
 
 .landing p {
   color: #e8e6e1;
+  margin-top: 1rem;
+}
+
+/*secondary section*/
+
+.section_secondary {
+  background-color: #f1f1f1;
+  padding-bottom: 2rem;
+}
+
+.section_secondary h3 {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+
+/* Main section */
+
+main h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 16px;
+}
+
+main img + p {
+  margin-top: 1rem;
+}
+
+main article {
+  background-color: var(--dark);
+  color: white;
+}
+
+aside {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+main aside article {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+main article h3 {
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles*/
+
+footer {
+  background-color: var(--dark);
+  padding-top: 2rem;
+}
+
+footer h4,
+footer p,
+footer a {
+  color: white;
+  font-size: 15px;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+}
+
+footer h4,
+footer h5 {
+  text-align: center;
+}
+
+footer h5 {
+  color: #a59678;
+  font-size: 1.2rem;
+  margin-top: 1.9rem;
+}
+
+.footer-nav {
+  padding-bottom: 4rem;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav a {
+  display: block;
   margin-top: 1rem;
 }
