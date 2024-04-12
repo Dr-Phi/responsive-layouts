@@ -315,3 +315,37 @@ footer nav a {
   display: block;
   margin-top: 1rem;
 }
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .landing .d-flex {
+    display: flex;
+    gap: 4rem;
+  }
+  p + .btn {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .m-flex {
+    display: flex;
+    gap: 2rem;
+  }
+  main img {
+    max-width: 42%;
+    max-height: 14rem;
+  }
+  footer p {
+    font-size: 17px;
+  }
+  footer h4 {
+    font-size: 2rem;
+  }
+  footer .footer-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
